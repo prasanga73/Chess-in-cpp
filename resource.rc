@@ -1,0 +1,15 @@
+#include "resource.h"
+#include<windows.h>
+
+MAIN_ICON ICON "resources/icon.ico"
+
+PROMOTION_DIALOG DIALOGEX 0, 0, 220, 28
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+CAPTION "Promotion Choice"
+BEGIN
+    PUSHBUTTON      "Queen",QUEEN_BTN,7,7,50,14
+    PUSHBUTTON      "Rook",ROOK_BTN,59,7,50,14
+    PUSHBUTTON      "Knight",KNIGHT_BTN,111,7,50,14
+    PUSHBUTTON      "Bishop",BISHOP_BTN,163,7,50,14
+END
